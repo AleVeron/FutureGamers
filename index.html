@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos a Future Gamers, aqui encontraras los mejores productos para tu PC GAMER">
+    <meta name="keywords" content="PC Gamer, Monitor, Notebook, Gabinetes">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Future Gamers</title>
+</head>
+
+<body>
+  <header class="header"> 
+    <a href="./index.html" style="text-decoration: none;">
+      <h1 class="header__logo"> 
+        FUTURE GAMERS
+      </h1>
+    </a>
+    
+    <nav class="header__nav">
+        <ul class="nav__lista">
+          <li class="nav__item" >
+            <div class="dropdown" >
+                <button  class="item__button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  productos
+                </button>
+                <ul class="dropdown-menu nav__productos" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="./Html/Monitores.html">Monitores</a></li>
+                  <li><a class="dropdown-item" href="./Html/Gabinetes.html">Gabinetes</a></li>
+                  <li><a class="dropdown-item" href="./Html/Notebooks.html">Notebooks</a></li>
+                </ul>
+              </div>
+              <li class="nav__item"><a href="Html/Sponsors.html" class="item__link">Sponsors</a></li>
+              <li class="nav__item"><a href="Html/ArmatuPC.html" class="item__link">Tutorial</a></li>
+              <li class="nav__item"><a href="Html/Contactos.html" class="item__link">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+    <main class="index imagenGamer"> 
+
+     <section data-aos="zoom-in" class="index__carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Imagenes/CarouselIndex/Monitores.jpg" class="d-block w-100 img-fluid carousel__imagen" alt="Monitores">
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/CarouselIndex/Cooler Master.jpg" class="d-block w-100 img-fluid carousel__imagen" alt="Cooler Master">
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/CarouselIndex/Acer.jpg" class="d-block w-100 img-fluid carousel__imagen" alt="Acer">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </section>   
+
+     <section class="index__destacados">
+
+        <h3 class="destacados__h3">PRODUCTOS DESTACADOS</h3>
+
+     </section>
+
+    <section class="index__section" >
+        
+          <article data-aos="flip-left" class="section__articulos"><img  src="./Imagenes/Gabinete con borde/Gabinete con borde 1.png" alt="Gabinete gamer" class="articulos__imagen"></article>
+          <article data-aos="flip-left" class="section__articulos"><img src="./Imagenes/Gabinete con borde/Gabinete con borde 2.png" alt="Gabinete gamer" class="articulos__imagen"></article>
+          <article data-aos="flip-left" class="section__articulos"><img src="./Imagenes/Monitores con borde/Monitor 1 Bordes.png"alt="Monitor Gamer" class="articulos__imagen"></article>
+          <article data-aos="flip-left" class="section__articulos"><img src="./Imagenes/Monitores con borde/Monitor 2 Bordes.png" alt="Monitor Gamer" class="articulos__imagen"></article>
+          <article data-aos="flip-left" class="section__articulos"><img src="./Imagenes/Notebook con borde/Notebook con borde 2.png" alt="Notebook" class="articulos__imagen"></article>
+          <article data-aos="flip-left" class="section__articulos"><img src="./Imagenes/Notebook con borde/Notebook con borde 3.png" alt="Notebook" class="articulos__imagen"></article>
+          
+    </section>
+
+ </main>
+    
+    
+
+<footer class="footer">
+  <h2 class="titulo__footer">future gamers</h2>
+  <section class="footer_lista">
+    <ul>
+      <li data-aos="fade-right" class="lista__item"><a href="https://www.facebook.com/"><img src="./Imagenes/Facebook.svg" alt="Facebook" class="item__imagen"></a></li> 
+      <li data-aos="fade-right" class="lista__item"><a href="https://www.instagram.com/"><img src="./Imagenes/Instagram.png" alt="Instagram" class="item__imagen"></a></li>
+      <li data-aos="fade-right" class="lista__item"><a href="https://www.whatsapp.com/?lang=es"><img src="./Imagenes/Whatsapp.png" alt="Whatsapp" class="item__imagen"></a></li>
+    </ul>
+  </section>
+  <p class="footer__p">@2021 Todos los Derechos Reservados. Creado por Veron Alejo.</p>
+  <a class="footer__inicio" href="./index.html">Inicio</a>
+</footer>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+				easing: 'ease-out-back',
+				duration: 2000
+			});
+  </script>
+</body>
+</html>

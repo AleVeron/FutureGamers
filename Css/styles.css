@@ -11,6 +11,22 @@
   max-width: 100%;
   max-height: auto; }
 
+.imagenProductos {
+  background-image: url("../Imagenes/imagenTeclado.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: auto; }
+
+.imagenSponsor {
+  background-image: url("../Imagenes/imagenPcgamer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: auto; }
+
 @media only screen and (max-width: 600px) {
   .header {
     z-index: 1100;
@@ -46,19 +62,23 @@
           font-family: 'Fjalla One', sans-serif;
           text-transform: uppercase;
           font-size: 25px; }
+        .header .header__nav .nav__lista .nav__item .item__button:hover {
+          color: #b99a60; }
         .header .header__nav .nav__lista .nav__item .item__link {
           text-decoration: none;
           color: white;
           font-size: 25px; }
         .header .header__nav .nav__lista .nav__item .item__link:hover {
-          text-decoration: underline;
-          color: white; }
+          color: #b99a60; }
   .index {
     height: 100%; }
     .index .index__carousel {
-      padding: 10px; }
+      padding: 10px;
+      display: flex;
+      justify-content: center; }
       .index .index__carousel .carousel__imagen {
-        max-height: 200px; }
+        max-height: 200px;
+        border-radius: 10px; }
     .index .index__destacados {
       padding: 10px;
       display: flex;
@@ -114,13 +134,13 @@
           font-size: 40px;
           padding-left: 20px; }
         .formulario .formulario__aside .aside__div .aside__comentarios {
-          font-size: 30px; }
+          font-size: 20px; }
     .formulario .titulo__contactos {
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Fjalla One', sans-serif;
-      font-size: 60px;
+      font-size: 70px;
       grid-area: titulo; }
     .formulario .titulo__formulario {
       display: flex;
@@ -139,21 +159,31 @@
       grid-area: formulario; }
   .formulario__map {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 10px;
+    align-items: center;
+    padding: 10px;
     background-color: #1493b9; }
+    .formulario__map .titulo__map {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 60px; }
   .footer {
     height: 100%;
     text-align: center;
-    background-image: linear-gradient(#a0a0ad, #000800); }
+    background-image: linear-gradient(#454547, #000800); }
     .footer .titulo__footer {
+      color: white;
       text-transform: uppercase;
       font-family: 'Fjalla One', sans-serif;
-      font-weight: 700;
+      font-weight: 500;
       padding: 10px;
       font-size: 30px; }
     .footer .footer_lista {
-      padding: 10px 0 5px 0;
+      height: 70px;
+      padding: 10px 10px 10px 0px;
       text-transform: uppercase;
       font-family: 'Fjalla One', sans-serif; }
       .footer .footer_lista .lista__item {
@@ -179,7 +209,7 @@
       padding: 10px 0 5px 0;
       color: #d1cfcf;
       font-family: inherit;
-      font-size: 15px; }
+      font-size: 14px; }
     .footer .footer__inicio {
       display: flex;
       justify-content: center;
@@ -190,64 +220,41 @@
     .footer .footer__inicio:hover {
       text-decoration: underline;
       color: white; }
-  .productos .div__productos {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .productos .div__productos .productos__titulo {
-      height: 80px;
-      background-color: black;
-      font-family: 'Bungee Inline', cursive;
-      font-size: 45px;
-      color: white;
-      padding: 10px;
-      border-radius: 15px; }
-  .productos .productos__cards {
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-    flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 12px; }
-    .productos .productos__cards .card-body {
-      background-image: linear-gradient(#4f4f52, black); }
-      .productos .productos__cards .card-body .card-text {
+  .productos {
+    height: 100%; }
+    .productos .div__productos {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .productos .div__productos .productos__titulo {
+        height: 80px;
+        background-color: black;
+        font-family: 'Bungee Inline', cursive;
+        font-size: 45px;
         color: white;
-        font-weight: 900;
-        text-align: center; }
-    .productos .productos__cards .card__imagen {
-      background-color: gray;
-      width: 286px;
-      height: 256px; }
-  .productos .productos__tabla {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    column-gap: 12px;
-    row-gap: 12px;
-    padding-bottom: 25px; }
-    .productos .productos__tabla .tabla {
-      width: 475px;
-      height: 500px;
-      background-image: linear-gradient(#80808a, black);
-      font-family: 'Ubuntu', sans-serif;
-      border: solid 4px #eee8e8; }
-      .productos .productos__tabla .tabla th {
-        color: black;
-        font-weight: 700;
-        font-size: 21px;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-      .productos .productos__tabla .tabla td {
-        color: #ebe8e3;
-        font-size: 17px;
-        text-align: center;
-        font-weight: 900; }
+        padding: 10px;
+        border-radius: 15px; }
+    .productos .productos__cards {
+      display: flex;
+      padding-top: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      column-gap: 120px;
+      row-gap: 120px; }
+      .productos .productos__cards .card-body {
+        background-image: linear-gradient(#4f4f52, black); }
+        .productos .productos__cards .card-body .card-text {
+          color: white;
+          font-weight: 900;
+          text-align: center; }
+      .productos .productos__cards .card__imagen {
+        background-color: gray;
+        width: 288px;
+        height: 256px; }
   .sponsorsMain .div__titulo {
     width: 100%;
     height: 300px;
@@ -346,17 +353,21 @@
           font-family: 'Fjalla One', sans-serif;
           text-transform: uppercase;
           font-size: 30px; }
+        .header .header__nav .nav__lista .nav__item .item__button:hover {
+          color: #b99a60; }
         .header .header__nav .nav__lista .nav__item .item__link {
           text-decoration: none;
           color: white;
           font-size: 30px; }
         .header .header__nav .nav__lista .nav__item .item__link:hover {
-          text-decoration: underline;
-          color: white; }
+          color: #b99a60; }
   .index .index__carousel {
-    padding: 10px; }
+    display: flex;
+    justify-content: center;
+    padding: 5px; }
     .index .index__carousel .carousel__imagen {
-      max-height: 380px; }
+      max-height: 380px;
+      border-radius: 15px; }
   .index .index__destacados {
     padding: 10px;
     display: flex;
@@ -397,7 +408,7 @@
   .formulario {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: linear-gradient(#c4d6dd, #1493b9);
-    height: 1800px;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr 3fr;
@@ -413,20 +424,20 @@
           font-size: 40px;
           padding-left: 20px; }
         .formulario .formulario__aside .aside__div .aside__comentarios {
-          font-size: 30px; }
+          font-size: 20px; }
     .formulario .titulo__contactos {
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Fjalla One', sans-serif;
-      font-size: 60px;
+      font-size: 70px;
       grid-area: titulo; }
     .formulario .titulo__formulario {
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Fjalla One', sans-serif;
-      font-size: 60px;
+      font-size: 70px;
       grid-area: titulo2; }
     .formulario .formulario__form {
       padding-left: 40px;
@@ -438,21 +449,32 @@
       grid-area: formulario; }
   .formulario__map {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 10px;
+    align-items: center;
+    padding: 10px;
     background-color: #1493b9; }
+    .formulario__map .titulo__map {
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 60px; }
   .footer {
     height: auto;
-    background-image: linear-gradient(#a0a0ad, #000800); }
+    background-image: linear-gradient(#454547, #000800); }
     .footer .titulo__footer {
+      color: white;
       text-align: center;
       text-transform: uppercase;
       font-family: 'Fjalla One', sans-serif;
-      font-weight: 900;
+      font-weight: 500;
       padding: 17px;
       font-size: 35px; }
     .footer .footer_lista {
-      padding: 20px 0 15px 0;
+      height: 75px;
+      padding: 10px 10px 10px 0px;
       text-align: center; }
       .footer .footer_lista .lista__item {
         display: inline-block;
@@ -477,7 +499,7 @@
     .footer .footer__p {
       color: #d1cfcf;
       font-family: inherit;
-      font-size: 17px;
+      font-size: 15px;
       padding: 20px 0 15px 0;
       text-align: center; }
     .footer .footer__inicio {
@@ -490,65 +512,41 @@
     .footer .footer__inicio:hover {
       text-decoration: underline;
       color: white; }
-  .productos .div__productos {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .productos .div__productos .productos__titulo {
-      height: 80px;
-      background-color: black;
-      font-family: 'Bungee Inline', cursive;
-      font-size: 45px;
-      color: white;
-      padding: 10px;
-      border-radius: 15px; }
-  .productos .productos__cards {
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-    flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 12px; }
-    .productos .productos__cards .card-body {
-      background-image: linear-gradient(#4f4f52, black); }
-      .productos .productos__cards .card-body .card-text {
+  .productos {
+    height: 100%; }
+    .productos .div__productos {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .productos .div__productos .productos__titulo {
+        height: 80px;
+        background-color: black;
+        font-family: 'Bungee Inline', cursive;
+        font-size: 45px;
         color: white;
-        font-weight: 500;
-        text-align: center; }
-    .productos .productos__cards .card__imagen {
-      background-color: gray;
-      width: 286px;
-      height: 256px; }
-  .productos .productos__tabla {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    column-gap: 12px;
-    row-gap: 12px;
-    padding: 15px; }
-    .productos .productos__tabla .tabla {
-      width: 570px;
-      height: 80%;
-      background-image: linear-gradient(#80808a, black);
-      font-family: 'Ubuntu', sans-serif;
-      border: solid 4px black; }
-      .productos .productos__tabla .tabla th {
-        color: #000003;
-        font-weight: 700;
-        font-size: 25px;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-      .productos .productos__tabla .tabla td {
-        color: #ebe8e3;
-        font-size: 20px;
-        text-align: center;
-        font-weight: 900; }
+        padding: 10px;
+        border-radius: 15px; }
+    .productos .productos__cards {
+      display: flex;
+      padding-top: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      column-gap: 12px;
+      row-gap: 120px; }
+      .productos .productos__cards .card-body {
+        background-image: linear-gradient(#4f4f52, black); }
+        .productos .productos__cards .card-body .card-text {
+          color: white;
+          font-weight: 500;
+          text-align: center; }
+      .productos .productos__cards .card__imagen {
+        background-color: gray;
+        width: 288px;
+        height: 256px; }
   .sponsorsMain .div__titulo {
     width: 100%;
     height: 300px;
@@ -575,13 +573,13 @@
       align-items: center;
       justify-content: center; }
       .sponsorsMain .sponsorsDos .sponsors__div .sponsors__imagen {
-        width: 700px;
-        height: 500px;
+        width: 625px;
+        height: 525px;
         border-radius: 10px; }
       .sponsorsMain .sponsorsDos .sponsors__div .sponsors__imagen:hover {
         transition: width 1s, height 1s;
-        width: 650px;
-        height: 450px; }
+        width: 575px;
+        height: 475px; }
   .armaTupc {
     height: 1500px; }
     .armaTupc .videoArmado {
@@ -644,23 +642,25 @@
         .header .header__nav .nav__lista .nav__item .item__button {
           background-image: linear-gradient(#070707, #262726);
           border: none;
-          font-size: 40px;
+          font-size: 35px;
           font-family: 'Fjalla One', sans-serif;
           text-transform: uppercase; }
+        .header .header__nav .nav__lista .nav__item .item__button:hover {
+          color: #b99a60; }
         .header .header__nav .nav__lista .nav__item .item__link {
           text-decoration: none;
           color: white;
-          font-size: 40px; }
+          font-size: 35px; }
         .header .header__nav .nav__lista .nav__item .item__link:hover {
-          text-decoration: underline;
-          color: white; }
+          color: #b99a60; }
   .index .index__carousel {
-    padding: 20px 50px 0 50px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 5px; }
     .index .index__carousel .carousel__imagen {
-      height: 500px;
-      max-width: 1450px; }
+      height: 550px;
+      border-radius: 15px;
+      width: 1500px; }
   .index .index__destacados {
     padding: 10px;
     display: flex;
@@ -703,17 +703,18 @@
     font-family: inherit;
     height: 100%;
     text-align: center;
-    background-image: linear-gradient(#a0a0ad, #000800);
+    background-image: linear-gradient(#454547, #000800);
     flex-direction: column; }
     .footer .titulo__footer {
       font-family: 'Fjalla One', sans-serif;
       text-transform: uppercase;
       padding: 20px 20px 0px 0px;
-      color: black;
+      color: white;
       font-size: 40px;
       font-weight: 500; }
     .footer .footer_lista {
-      padding: 30px 20px 10px 0px;
+      height: 75px;
+      padding: 10px 10px 10px 0px;
       text-align: center;
       font-family: 'Fjalla One', sans-serif; }
       .footer .footer_lista .lista__item {
@@ -749,7 +750,7 @@
   .formulario {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: linear-gradient(#c4d6dd, #1493b9);
-    height: 1000px;
+    height: 900px;
     display: grid;
     grid-template-columns: 1fr  2fr;
     grid-template-rows: 1fr 3fr;
@@ -766,7 +767,7 @@
           font-size: 40px;
           padding-left: 20px; }
         .formulario .formulario__aside .aside__div .aside__comentarios {
-          font-size: 40px; }
+          font-size: 30px; }
     .formulario .titulo__contactos {
       display: flex;
       align-items: center;
@@ -791,68 +792,53 @@
       grid-area: formulario; }
   .formulario__map {
     display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-    background-color: #1493b9; }
-  .productos .div__productos {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .productos .div__productos .productos__titulo {
-      height: 80px;
-      background-color: black;
-      font-family: 'Bungee Inline', cursive;
-      font-size: 45px;
-      color: white;
-      padding: 10px;
-      border-radius: 15px; }
-  .productos .productos__cards {
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
-    flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 12px; }
-    .productos .productos__cards .card-body {
-      background-image: linear-gradient(#4f4f52, black); }
-      .productos .productos__cards .card-body .card-text {
-        color: white;
-        font-weight: 500;
-        text-align: center; }
-    .productos .productos__cards .card__imagen {
-      background-color: gray;
-      width: 286px;
-      height: 256px; }
-  .productos .productos__tabla {
-    display: flex;
     flex-direction: column;
-    height: 600px;
-    align-items: center;
     justify-content: center;
-    column-gap: 12px;
-    row-gap: 12px;
-    padding: 15px; }
-    .productos .productos__tabla .tabla {
-      width: 920px;
-      height: 80%;
-      background-image: linear-gradient(#80808a, black);
-      font-family: 'Ubuntu', sans-serif;
-      border: solid 4px black; }
-      .productos .productos__tabla .tabla th {
-        color: black;
-        font-weight: 700;
-        font-size: 35px;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-      .productos .productos__tabla .tabla td {
-        color: #ebe8e3;
-        font-size: 20px;
-        text-align: center;
-        font-weight: 900; }
+    align-items: center;
+    padding: 10px;
+    background-color: #1493b9; }
+    .formulario__map .titulo__map {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 60px; }
+  .productos {
+    height: 100%; }
+    .productos .div__productos {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .productos .div__productos .productos__titulo {
+        height: 80px;
+        background-color: black;
+        font-family: 'Bungee Inline', cursive;
+        font-size: 45px;
+        color: white;
+        padding: 10px;
+        border-radius: 15px; }
+    .productos .productos__cards {
+      display: flex;
+      padding-top: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      column-gap: 12px;
+      row-gap: 12px; }
+      .productos .productos__cards .card-body {
+        background-image: linear-gradient(#4f4f52, black); }
+        .productos .productos__cards .card-body .card-text {
+          color: white;
+          font-weight: 500;
+          text-align: center; }
+      .productos .productos__cards .card__imagen {
+        background-color: gray;
+        width: 288px;
+        height: 256px; }
   .sponsorsMain .div__titulo {
     width: 100%;
     height: 300px;
@@ -879,12 +865,12 @@
       align-items: center;
       justify-content: center; }
       .sponsorsMain .sponsorsDos .sponsors__div .sponsors__imagen {
-        width: 750px;
+        width: 600px;
         height: 500px;
         border-radius: 10px; }
       .sponsorsMain .sponsorsDos .sponsors__div .sponsors__imagen:hover {
         transition: width 1s, height 1s;
-        width: 770px;
+        width: 650px;
         height: 520px; }
   .armaTupc {
     height: 1400px; }

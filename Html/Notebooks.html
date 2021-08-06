@@ -15,14 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Notebooks</title>
 </head>
+
 <body >
 
   <header class="header"> 
+    <!-- Logo -->
     <a href="../index.html" style="text-decoration: none;">
       <h1 class="header__logo"> 
         FUTURE GAMERS
       </h1>
     </a>
+    <!-- Menu -->
     <nav class="header__nav">
         <ul class="nav__lista">
           <li class="nav__item">
@@ -41,18 +44,18 @@
               <li class="nav__item"><a href="./Contactos.html" class="item__link">Contacto</a></li>
         </ul>
     </nav>
-</header>
+  </header>
 
     
-    <main class="imagenProductos productos">
-  
-      <section>
-
-          <div class="div__productos">
-              <h3 class="productos__titulo">Monitores</h3>
-          </div>
-
-          <div data-aos="fade-right" class="productos__cards">
+  <main class="imagenProductos productos">
+      
+     
+      <!-- Titulo -->
+      <div class="div__productos">
+          <h3 data-aos="flip-down" class="productos__titulo">Notebooks</h3>
+      </div>
+      <!-- Productos -->
+      <div data-aos="fade-right" class="productos__cards">
               <div class="card" style="width: 18rem;height: 22rem;border: none;">
                 <img src="../Imagenes/Notebooks sin borde/Notebook sin borde 1.png" class="card-img-top card__imagen" alt="Notebook Acer i3">
                 <div class="card-body">
@@ -71,11 +74,12 @@
                   <p class="card-text">Notebook Acer i7</p>
                 </div>
               </div>
-            </div>
+      </div>
             
-              <br><br><br>
+          <br><br><br>
 
-          <div data-aos="fade-right" class="productos__cards">
+      <!-- Productos -->
+        <div data-aos="fade-left" class="productos__cards">
                 <div class="card" style="width: 18rem;height: 22rem;border: none;">
                   <img src="../Imagenes/Notebooks sin borde/Notebook sin borde 1.png" class="card-img-top card__imagen" alt="Notebook Acer i3">
                   <div class="card-body">
@@ -92,29 +96,41 @@
                   <img src="../Imagenes/Notebooks sin borde/Notebook sin borde 3.png" class="card-img-top card__imagen" alt="Notebook Acer i7">
                   <div class="card-body">
                     <p class="card-text">Notebook Acer i7</p>
-                  </div>
                 </div>
-          </div>
-          </div>
+            </div>
+        </div>
 
+      <br><br><br>
+        
+      <!-- Metodos de pago -->
+      <section class="productos__metodos">
+          <div class="metodos__div">
+            <div>
+              <h3 class="metodos__titulo">Metodos de pago</h3>
+            </div>
+            <br>
+            <div></div><img class="img-fluid" src="../Imagenes/metodosPago.png" alt=""></div>
+          </div>
+      </section>        
+
+
+  </main>
+
+  <footer class="footer">
+      <!--Titulo Footer-->
+      <h2 class="titulo__footer">future gamers</h2>
+      <!--Redes-->
+      <section class="footer_lista">
+        <ul>
+          <li data-aos="fade-right" class="lista__item"><a href="https://www.facebook.com/"><img src="../Imagenes/Facebook.svg" alt="Facebook" class="item__imagen"></a></li> 
+          <li data-aos="fade-right" class="lista__item"><a href="https://www.instagram.com/"><img src="../Imagenes/Instagram.png" alt="Instagram" class="item__imagen"></a></li>
+          <li data-aos="fade-right" class="lista__item"><a href="https://www.whatsapp.com/?lang=es"><img src="../Imagenes/Whatsapp.png" alt="Whatsapp" class="item__imagen"></a></li>
+        </ul>
       </section>
-              
-
-
-</main>
-
-<footer class="footer">
-  <h2 class="titulo__footer">future gamers</h2>
-  <section class="footer_lista">
-    <ul>
-      <li data-aos="fade-right" class="lista__item"><a href="https://www.facebook.com/"><img src="../Imagenes/Facebook.svg" alt="Facebook" class="item__imagen"></a></li> 
-      <li data-aos="fade-right" class="lista__item"><a href="https://www.instagram.com/"><img src="../Imagenes/Instagram.png" alt="Instagram" class="item__imagen"></a></li>
-      <li data-aos="fade-right" class="lista__item"><a href="https://www.whatsapp.com/?lang=es"><img src="../Imagenes/Whatsapp.png" alt="Whatsapp" class="item__imagen"></a></li>
-    </ul>
-  </section>
-  <p class="footer__p">@2021 Todos los Derechos Reservados. Creado por Veron Alejo.</p>
-  <a class="footer__inicio" href="../index.html">Inicio</a>
-</footer>
+      <!--Comentarios-->
+      <p class="footer__p">@2021 Todos los Derechos Reservados. Creado por Veron Alejo.</p>
+      <a class="footer__inicio" href="../index.html">Inicio</a>
+  </footer>
      
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

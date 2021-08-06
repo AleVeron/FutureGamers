@@ -17,13 +17,15 @@
 </head>
 <body >
 
-    <header class="header"> 
+  <header class="header"> 
+      <!-- Logo -->
       <a href="../index.html" style="text-decoration: none;">
         <h1 class="header__logo"> 
           FUTURE GAMERS
         </h1>
       </a>
-        <nav class="header__nav">
+      <!-- Menu -->
+      <nav class="header__nav">
             <ul class="nav__lista">
               <li class="nav__item">
                 <div class="dropdown" >
@@ -40,34 +42,39 @@
                   <li class="nav__item"><a href="./ArmatuPC.html" class="item__link">Tutorial</a></li>
                   <li class="nav__item"><a href="./Contactos.html" class="item__link">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
+      </nav>
+  </header>
 
+  <main>
     
-<main class="formulario">
+    <!--Seccion con grid-->
+    <section class="formulario">
 
-    <aside class="formulario__aside">
+      <!--Aside-->
+      <aside class="formulario__aside">
 
         <div class="aside__div">
             <h3 class="aside__titulos">Teléfono</h3>
             <p class="aside__comentarios">4-123-456</p>
         </div>
         <div class="aside__div">
-            <h3 class="aside__titulos">Email</h3>
+            <h3 class="aside__titulos">Correo</h3>
             <p class="aside__comentarios">futuregamers@gmail.com</p>
         </div >
         <div class="aside__div">
             <h3 class="aside__titulos">Horarios de Atención</h3>
-            <p class="aside__comentarios">Lunes a sabados de 10am a 6pm</p>
+            <p class="aside__comentarios">Lunes a Sabados de 10am a 18pm</p>
         </div>
 
-    </aside>
+      </aside>
+      <!--Titulos contacto-->
+      <h3 class="titulo__contactos">Contactos</h3>
 
-    <h3 data-aos="fade-up-right" class="titulo__contactos">Contactos</h3>
-
-    <h3 data-aos="fade-up-right" class="titulo__formulario">Califícanos</h3>
+      <!--Titulo Formulario-->
+      <h3 class="titulo__formulario">Califícanos</h3>
     
-    <form class="formulario__form" action="" method="POST">
+      <!--Formulario de contacto-->
+      <form class="formulario__form" action="" method="POST">
         <label for="Nombre">Ingrese su nombre:</label>
         <input type="text" placeholder="Nombre" id="Nombre"> 
         <br>
@@ -104,26 +111,35 @@
         <br><br>
         <input type="submit">
         <input type="reset" name="Reiniciar" id="">
-     </form>
+      </form>
     
-    </main>
-    <div class="formulario__map">
-      <h3 class="titulo__map">Ubícanos</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13111.23494517527!2d-58.42876120000001!3d-34.760410549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1626937688504!5m2!1ses-419!2sar" width="90%" height="450" style="border-radius: 7px;" allowfullscreen="" loading="lazy"></iframe>
-     </div>
+    </section>
 
-<footer class="footer">
-  <h2 class="titulo__footer">future gamers</h2>
-  <section class="footer_lista">
-    <ul>
-      <li data-aos="fade-right" class="lista__item"><a href="https://www.facebook.com/"><img src="../Imagenes/Facebook.svg" alt="Facebook" class="item__imagen"></a></li> 
-      <li data-aos="fade-right" class="lista__item"><a href="https://www.instagram.com/"><img src="../Imagenes/Instagram.png" alt="Instagram" class="item__imagen"></a></li>
-      <li data-aos="fade-right" class="lista__item"><a href="https://www.whatsapp.com/?lang=es"><img src="../Imagenes/Whatsapp.png" alt="Whatsapp" class="item__imagen"></a></li>
-    </ul>
-  </section>
-  <p class="footer__p">@2021 Todos los Derechos Reservados. Creado por Veron Alejo.</p>
-  <a class="footer__inicio" href="../index.html">Inicio</a>
-</footer>
+    <!--Sección Mapa-->
+    <section class="formulario__map">
+      <!--Titulo Mapa-->
+      <h3 class="titulo__map">Ubicanos</h3>
+      <!--Mapa-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13111.23494517527!2d-58.42876120000001!3d-34.760410549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1626937688504!5m2!1ses-419!2sar" width="90%" height="450" style="border-radius: 7px;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+  </main>  
+
+  <footer class="footer">
+      <!--Titulo Footer-->
+      <h2 class="titulo__footer">future gamers</h2>
+      <!--Redes-->
+      <section class="footer_lista">
+        <ul>
+          <li data-aos="fade-right" class="lista__item"><a href="https://www.facebook.com/"><img src="../Imagenes/Facebook.svg" alt="Facebook" class="item__imagen"></a></li> 
+          <li data-aos="fade-right" class="lista__item"><a href="https://www.instagram.com/"><img src="../Imagenes/Instagram.png" alt="Instagram" class="item__imagen"></a></li>
+          <li data-aos="fade-right" class="lista__item"><a href="https://www.whatsapp.com/?lang=es"><img src="../Imagenes/Whatsapp.png" alt="Whatsapp" class="item__imagen"></a></li>
+        </ul>
+      </section>
+      <!--Comentarios-->
+      <p class="footer__p">@2021 Todos los Derechos Reservados. Creado por Veron Alejo.</p>
+      <a class="footer__inicio" href="../index.html">Inicio</a>
+  </footer>
      
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

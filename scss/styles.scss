@@ -1,7 +1,7 @@
 *{   margin: 0;
      padding: 0;}
 
-/*IMAGEN DE FONDO*/
+/*IMAGENES DE FONDO*/
 
 .imagenGamer{
      background-image: url("../Imagenes/Imagen\ Gamer.jpeg");
@@ -9,7 +9,8 @@
      background-repeat: no-repeat;
      background-position: center; 
      max-width: 100%;
-     max-height: auto;}
+     max-height: auto;
+}
 .imagenProductos{
      background-image: url("../Imagenes/imagenTeclado.jpg");
      background-size:cover;
@@ -27,8 +28,12 @@
      max-height: auto; 
 }
 
+//Media queries Smartphone 
+
 @media only screen and (max-width:600px){
-     
+ 
+
+//Header
 .header{
      z-index: 1100;
      height: auto;
@@ -86,15 +91,17 @@
                                }
        } 
 
+
+//Home
 .index{
      
      height: 100%;
+
      .index__carousel{
           padding: 10px;
           display: flex;
           justify-content: center;
-          
-          
+
           .carousel__imagen{
                max-height: 200px;
                border-radius: 10px;
@@ -146,6 +153,7 @@
                          }
       }
 
+//Contactos      
 .formulario{
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      background-image: linear-gradient( rgb(196, 214, 221),rgb(20, 147, 185));
@@ -217,8 +225,11 @@
      font-family: 'Fjalla One', sans-serif;
      font-size: 60px;
      
-}}         
+}
+}         
 
+
+//Footer
 .footer{
      height: 100%;
      text-align: center;
@@ -278,6 +289,7 @@
                            
           }
 
+// Monitores Gabinetes Notebooks
 .productos{
 
      height: 100%;
@@ -327,10 +339,30 @@
                 }
           
           }
+     .productos__metodos{
+          display:flex; 
+          justify-content:center;
+          .metodos__div{
+               background-color: rgb(199, 194, 194);
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 15px;
+               width: 480px;
+               border-radius: 15px;
+               justify-content: center;
+               align-items: center;
+               .metodos__titulo{
+                    font-family: 'Bungee Inline', cursive;
+                    text-transform: uppercase;
+                    padding-top: 10px;}
+          }
+     }      
 
           
 }
 
+
+//Sponsors
 .sponsorsMain{
      .div__titulo{
           width: 100%;
@@ -374,6 +406,8 @@
          }
      }
 
+
+//Tutorial
 .armaTupc{
 
      height: 1300px;
@@ -413,8 +447,12 @@
 
      }
 
+//Media queries Tablet
+
 @media only screen and (min-width:600px) and (max-width:1200px){
 
+
+//Header     
 .header{
      z-index: 1100;
      height: 200px;
@@ -472,7 +510,9 @@
                      }
                                }
        } 
-  
+
+       
+//Home       
 .index{
      
      .index__carousel{
@@ -533,6 +573,8 @@
                       }
         }
 
+
+//Contacto
 .formulario{
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      background-image: linear-gradient( rgb(196, 214, 221),rgb(20, 147, 185));
@@ -602,7 +644,9 @@
                
           }
      }                    
-  
+
+     
+//Footer
 .footer{
        
                height:auto;
@@ -664,7 +708,9 @@
                                                   
                  
        }
-                  
+
+       
+//Monitores Gabinetes Notebooks     
 .productos{
      height: 100%;
      .div__productos{
@@ -711,11 +757,32 @@
                     
                 }
           
-          }    
+          }
+     .productos__metodos{
+          display:flex; 
+          justify-content:center;
+          .metodos__div{
+               background-color: rgb(199, 194, 194);
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 15px;
+               width: 85%;
+               border-radius: 15px;
+               justify-content: center;
+               align-items: center;
+               .metodos__titulo{
+                    font-family: 'Bungee Inline', cursive;
+                    text-transform: uppercase;
+                    padding-top: 10px;}
+          }
+     }     
+              
      
           
 }
 
+
+//Sponsors
 .sponsorsMain{
      .div__titulo{
           width: 100%;
@@ -759,6 +826,8 @@
          }
      }
 
+
+//Tutorial    
 .armaTupc{
 
      height: 1500px;
@@ -798,8 +867,12 @@
  
 }
 
+//Media queries Escritorio
+
 @media only screen and (min-width:1200px){
 
+
+//Header     
 .header{
      z-index: 1100;
      height: 200px;
@@ -856,7 +929,9 @@
                      }
                                }
        } 
-     
+
+       
+//Home
 .index{
 
      .index__carousel{
@@ -920,6 +995,8 @@
                       }           
       }     
 
+
+//Footer
 .footer{
           display: flex;
           font-family:inherit;
@@ -982,6 +1059,8 @@
                     
        }
 
+
+//Contacto
 .formulario{
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      background-image: linear-gradient( rgb(196, 214, 221),rgb(20, 147, 185));
@@ -1057,6 +1136,8 @@
 }
 } 
 
+
+//Monitores Gabinetes Notebooks
 .productos{
 
      height: 100%;
@@ -1103,11 +1184,33 @@
                width: 288px;
                height: 256px;}
           
-          }    
+          }
+
+     .productos__metodos{
+          display:flex; 
+          justify-content:center;
+          .metodos__div{
+               background-color: rgb(199, 194, 194);
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 15px;
+               width: 1100px;
+               border-radius: 15px;
+               justify-content: center;
+               align-items: center;
+               .metodos__titulo{
+                    font-family: 'Bungee Inline', cursive;
+                    text-transform: uppercase;
+                    padding-top: 10px;}
+               
+          }
+     }   
      
           
           }
 
+
+//Sponsors
 .sponsorsMain{
      
      .div__titulo{
@@ -1152,6 +1255,8 @@
          }
      }
 
+
+//Tutorial
 .armaTupc{
 
      height: 1400px;
@@ -1187,7 +1292,8 @@
                border-radius: 15px;}
           }
 
-} 
+}
+
 }
 
 

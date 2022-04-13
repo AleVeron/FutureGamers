@@ -3,7 +3,7 @@ Bienvenidos a mi proyecto HTML!
 
 ![fgamers](https://user-images.githubusercontent.com/87399606/163244079-c8cf069f-accf-4f27-a929-eaa518192b8a.png)
 
-Mi nombre es Veron Alejo, estudiante de programacion y en este proyecto realizo un proyecto basado totalmente en html, css y sass. 
+Mi nombre es Veron Alejo, estudiante de programacion y en este proyecto esta basado totalmente en html, css y sass. 
  El proyecto se basa en un ecommerce de productos tecnologicos, mas especificamente en la venta de hardware. Cuenta con 5 secciones, el inicio, productos, sponsors,
 tutoriales y la seccion de contacto.
 Tanto en la seccion de inicio como en todas las demas la pagina se adapta de forma responsiva utilizando media querys logrando asi una adaptacion correcta en 3 tamaños
